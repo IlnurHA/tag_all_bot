@@ -1,0 +1,4 @@
+pyTelegramBotAPI==4.23.0
+random-unicode-emoji==2.8
+pydantic==2.9.2
+pydantic-settings==2.5.2
