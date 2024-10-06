@@ -10,6 +10,8 @@ And `bot_token` from [BotFather](https://t.me/BotFather)
 
 ### Setting up env vars
 
+Put the following env vars to `.env` file in project directory
+
 ```.env
 ALL_TG_BOT_TELEGRAM_TOKEN=<bot_token>
 ALL_TG_BOT_API_ID=<api_id>
@@ -18,22 +20,22 @@ ALL_TG_BOT_API_EMOJI_LIMIT=10
 ALL_TG_BOT_LOGGER_LEVEL=INFO
 ```
 
-`ALL_TG_BOT_API_EMOJI_LIMIT` is a (soft) limit to how many emojis to show in one message (default: 20)
+`ALL_TG_BOT_API_EMOJI_LIMIT` is a (soft) limit to how many emojis to show in one message (default: **20**)
 
-`ALL_TG_BOT_LOGGER_LEVEL` is a log level for logger to show (default: "INFO"; Should be one of "CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG")
+`ALL_TG_BOT_LOGGER_LEVEL` is a log level for logger to show (default: **INFO**; Should be one of "CRITICAL", "ERROR", "WARNING", "INFO", "DEBUG")
 
 #### Start using python
 
 1. Installing python from [official website](https://www.python.org/about/gettingstarted/)
 
-2. Clonning repository
+2. Clone repository
 
     ```shell
     git clone https://github.com/IlnurHA/tag_all_bot.git
     cd tag_all_bot
     ```
 
-3. Creating environment
+3. Create environment
 
     **Linux**:
 
@@ -47,7 +49,7 @@ ALL_TG_BOT_LOGGER_LEVEL=INFO
     py -m venv venv
     ```
 
-4. Activating environment
+4. Activate environment
 
     **Linux**:
 
@@ -73,15 +75,13 @@ ALL_TG_BOT_LOGGER_LEVEL=INFO
 
     > Make sure that you turned on execution of scenarios for windows powershell
 
-5. Installing dependencies
+5. Install dependencies
 
     ```shell
     python -m pip install -r requirements.txt
     ```
 
-6. Put env vars from [Setting up env vars](#setting-up-env-vars) to `.env` file in project directory
-
-7. Executing
+6. Execute `main.py`
 
     ```shell
     python main.py
@@ -89,9 +89,9 @@ ALL_TG_BOT_LOGGER_LEVEL=INFO
 
 #### Start using docker (buildning from source)
 
-1. Install docker \[[link](https://docs.docker.com/get-started/)\]
+1. Install docker from [official website](https://docs.docker.com/get-started/)
 
-2. Clonning repository
+2. Clone repository
 
     ```shell
     git clone https://github.com/IlnurHA/tag_all_bot.git
@@ -110,7 +110,7 @@ ALL_TG_BOT_LOGGER_LEVEL=INFO
     docker run -d -v "$(realpath .)/.env:/app/.env" <name_of_image>
     ```
 
-5. **[Additional step]** Log saving
+5. **[Optional step]** Log saving
 
     Execute docker with one more parameter to save logs
     (You should specify it by yourself putting instead of `/absolute/path/for/logs/dir` path on your computer to save logs)
